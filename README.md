@@ -89,6 +89,7 @@ host aws_ingress_elb.us-east-2.elb.amazonaws.com
 Deploy Fluentd and Fluentbit
 ```
 kubectl create -f logging/fluentd.yaml
+kubectl create -f logging/fluent-bit-configmap.yaml
 kubectl create -f logging/fluentbit.yaml
 ```
 
